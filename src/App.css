@@ -13,13 +13,13 @@ body {
 .app {
   max-width: 800px;
   margin: 0 auto;
-  padding: 64px 24px 100px;
+  padding: 96px 24px 100px;
 }
 
 /* ── Header ── */
 .app-header {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .badge {
@@ -147,28 +147,28 @@ body {
 
 /* ── Submit Button ── */
 .submit-btn {
-  align-self: flex-end;
+  align-self: center;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 13px 28px;
+  padding: 13px 40px;
   font-size: 14px;
   font-weight: 600;
   font-family: inherit;
   letter-spacing: 0.2px;
-  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  background: #3b82f6;
   color: #ffffff;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
   box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
 }
 
 .submit-btn:hover:not(:disabled) {
-  opacity: 0.92;
+  background: #2563eb;
   transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.38);
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
 }
 .submit-btn:active:not(:disabled) { transform: translateY(0); box-shadow: none; }
 .submit-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
